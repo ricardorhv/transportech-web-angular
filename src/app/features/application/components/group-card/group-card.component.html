@@ -1,14 +1,12 @@
 <div class="bg-gray-200 rounded-md px-5 py-7">
-  <h4 class="text-[#00043C] text-xl font-semibold mb-2">Nome do grupo</h4>
+  <h4 class="text-[#00043C] text-xl font-semibold mb-2">{{grupo().nome}}</h4>
   <p class="text-zinc-400 text-sm">
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores nulla quaerat necessitatibus animi,
-    perspiciatis quae consequatur in suscipit. Voluptatem quasi, similique eum eligendi delectus a ex. Cumque
-    suscipit impedit ullam.
+    {{ grupo().descricao }}
   </p>
 
   <div class="mt-4 flex items-center justify-between gap-4 text-zinc-800">
-    <span>Assis Chateaubriand</span>
+    <span>{{ grupo().cidadeOrigem }}</span>
     <ng-icon color="#00043C" size="20" name="lucideArrowLeftRight" />
-    <span>Toledo</span>
+    <span>{{ grupo().cidadeDestino }}</span>
   </div>
 </div>
