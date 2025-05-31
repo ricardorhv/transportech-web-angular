@@ -12,6 +12,13 @@ export class AuthService {
 
   private readonly httpClient = inject(HttpClient);
 
+  public loginUsuario(email: string, senha: string) {
+    return this.httpClient.post<Usuario>(`${this.apiUrl}/usuario/login`, {
+      email,
+      senha,
+    });
+  }
+
   public cadastrarUsuario(
     novoUsuario: Omit<Usuario, 'id'>
   ): Observable<Usuario> {

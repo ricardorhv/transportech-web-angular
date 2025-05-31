@@ -1,17 +1,17 @@
 <main class="h-screen">
-  <form class="mx-auto mt-40 w-[600px] bg-gray-200 rounded-md p-7">
+  <form (ngSubmit)="login()" [formGroup]="loginForm" class="mx-auto mt-40 w-[600px] bg-gray-200 rounded-md p-7">
     <h1 class="text-2xl font-semibold text-[#00043C]">Acesse sua conta</h1>
 
     <div class="my-7 flex flex-col gap-5">
       <input
         class="bg-white p-3 text-sm placeholder:text-gray-400 text-gray-700 focus:outline focus:outline-[#00043C] rounded-md"
-        type="email" placeholder="Email">
+        type="email" placeholder="Email" formControlName="email">
       <input
         class="bg-white p-3 text-sm placeholder:text-gray-400 text-gray-700 focus:outline focus:outline-[#00043C] rounded-md"
-        type="password" placeholder="Senha">
+        type="password" placeholder="Senha" formControlName="senha">
     </div>
 
-    <button
+    <button type="submit"
       class="w-full flex items-center justify-center text-lg font-medium p-2 rounded-md bg-[#00043C] text-white cursor-pointer hover:bg-[#00043C]/90 transition-colors">
       Acessar
     </button>
