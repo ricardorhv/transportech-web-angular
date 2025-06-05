@@ -23,7 +23,7 @@ export class SignInComponent {
     const senha = this.loginForm.value.senha;
 
     this.authService.loginUsuario(email, senha).subscribe(() => {
-      this.router.navigate(['/app/groups']);
+      this.router.navigate(['/app']);
     });
   }
 }

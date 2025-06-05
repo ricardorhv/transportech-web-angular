@@ -1,7 +1,7 @@
 import { Component, input } from '@angular/core';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { lucideArrowLeftRight } from '@ng-icons/lucide';
-import { Group } from '../../../../model/group.mode';
+import { Group } from '../../../../model/group.model';
 
 @Component({
   selector: 'app-group-card',

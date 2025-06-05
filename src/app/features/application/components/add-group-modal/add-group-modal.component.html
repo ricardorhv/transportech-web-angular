@@ -7,24 +7,23 @@
     </button>
 
     <h4 class="text-2xl font-medium text-[#00043C]">Criar novo grupo</h4>
-
-    <form class="flex flex-col gap-6 mt-6 w-full">
+    <form (ngSubmit)="criarGrupo()" [formGroup]="formGroup" class="flex flex-col gap-6 mt-6 w-full">
       <div class="flex flex-col gap-4">
         <input
           class="bg-gray-200 p-3 text-sm placeholder:text-gray-400 text-gray-700 focus:outline focus:outline-[#00043C] rounded-md"
-          type="text" placeholder="Nome">
+          type="text" placeholder="Nome" formControlName="nome">
         <textarea
           class="bg-gray-200 p-3 text-sm placeholder:text-gray-400 text-gray-700 focus:outline focus:outline-[#00043C] rounded-md resize-none h-[100px]"
-          placeholder="Descrição"></textarea>
+          placeholder="Descrição" formControlName="descricao"></textarea>
 
         <div class="flex items-center justify-center gap-4">
           <input
             class="bg-gray-200 p-3 text-sm placeholder:text-gray-400 text-gray-700 focus:outline focus:outline-[#00043C] rounded-md"
-            type="text" placeholder="Origem">
+            type="text" placeholder="Origem" formControlName="cidadeOrigem">
           <ng-icon color="#00043C" size="20" name="lucideArrowLeftRight" />
           <input
             class="bg-gray-200 p-3 text-sm placeholder:text-gray-400 text-gray-700 focus:outline focus:outline-[#00043C] rounded-md"
-            type="text" placeholder="Destino">
+            type="text" placeholder="Destino" formControlName="cidadeDestino">
         </div>
       </div>
 
