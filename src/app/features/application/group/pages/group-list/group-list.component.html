@@ -4,4 +4,14 @@
     <app-group-card [grupo]="grupo" />
     }
   </div>
+
+  @if (openModal()) {
+  <app-add-group-modal (closeModal)="mudarEstadoDoModal(false)" />
+  }
+
+  <button
+    class="fixed bottom-8 right-8 bg-[#00043C] w-14 h-14 rounded-full flex items-center justify-center shadow-2xl z-40 cursor-pointer hover:bg-[#00043C]/90 transition-colors"
+    (click)="mudarEstadoDoModal(true)">
+    <ng-icon color="#FFF" size="28" name="lucidePlus" />
+  </button>
 </main>

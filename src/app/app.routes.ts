@@ -30,7 +30,7 @@ export const routes: Routes = [
     component: ApplicationComponent,
     children: [
       {
-        path: 'groups',
+        path: '',
         component: GroupListComponent,
       },
     ],
