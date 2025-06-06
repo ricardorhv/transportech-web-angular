@@ -1,4 +1,4 @@
-<main class="mt-8 px-5">
+<main class="my-8 px-5">
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-7">
     @for (grupo of grupos(); track grupo.id) {
     <app-group-card [grupo]="grupo" />
@@ -10,7 +10,7 @@
   }
 
   <button
-    class="fixed bottom-8 right-8 bg-[#00043C] w-14 h-14 rounded-full flex items-center justify-center shadow-2xl z-40 cursor-pointer hover:bg-[#00043C]/90 transition-colors"
+    class="fixed bottom-8 right-8 bg-[#00043C] w-14 h-14 rounded-full flex items-center justify-center shadow-2xl z-40 cursor-pointer hover:brightness-80 transition-all duration-300"
     (click)="mudarEstadoDoModal(true)">
     <ng-icon color="#FFF" size="28" name="lucidePlus" />
   </button>

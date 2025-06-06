@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 @theme {
-  --breakpoint-xs: 23rem;
+  --breakpoint-xs: 25rem;
 }
 
 body {

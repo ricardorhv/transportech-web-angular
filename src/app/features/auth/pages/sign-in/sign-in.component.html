@@ -1,18 +1,19 @@
-<main class="h-screen">
-  <form (ngSubmit)="login()" [formGroup]="loginForm" class="mx-auto mt-40 w-[600px] bg-gray-200 rounded-md p-7">
-    <h1 class="text-2xl font-semibold text-[#00043C]">Acesse sua conta</h1>
+<main class="flex my-15 2xl:my-25">
+  <form (ngSubmit)="login()" [formGroup]="loginForm"
+    class="mx-auto w-full max-w-[600px] bg-gray-200 rounded-2xl p-6 xs:p-8 sm:p-10">
+    <h1 class="text-xl xs:text-2xl font-semibold text-[#00043C]">Acesse sua conta</h1>
 
     <div class="my-7 flex flex-col gap-5">
       <input
-        class="bg-white p-3 text-sm placeholder:text-gray-400 text-gray-700 focus:outline focus:outline-[#00043C] rounded-md"
+        class="bg-white p-2 xs:p-3 text-sm sm:text-base placeholder:text-gray-400 text-gray-700 focus:outline focus:outline-[#00043C] rounded-md"
         type="email" placeholder="Email" formControlName="email">
       <input
-        class="bg-white p-3 text-sm placeholder:text-gray-400 text-gray-700 focus:outline focus:outline-[#00043C] rounded-md"
+        class="bg-white p-2 xs:p-3 text-sm sm:text-base placeholder:text-gray-400 text-gray-700 focus:outline focus:outline-[#00043C] rounded-md"
         type="password" placeholder="Senha" formControlName="senha">
     </div>
 
     <button type="submit"
-      class="w-full flex items-center justify-center text-lg font-medium p-2 rounded-md bg-[#00043C] text-white cursor-pointer hover:bg-[#00043C]/90 transition-colors">
+      class="w-full flex items-center justify-center text-sm sm:text-base font-medium p-2 rounded-md bg-[#00043C] text-white cursor-pointer hover:bg-[#00043C]/90 transition-colors duration-300">
       Acessar
     </button>
   </form>
